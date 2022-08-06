@@ -2,73 +2,86 @@ const projects = [
   {
     id: 1,
     name: 'Tonic',
-    img: './images/Enabled-3.svg',
-    img1: './images/frame2.svg',
-    img2: './images/SnapshootPortfolio.svg',
-    details: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    img3: './images/Tags.svg',
-    details2: 'Esse elit duis adipisicing et et laboris exercitation ipsum esse sunt voluptate esse culpa. Voluptate incididunt sunt pariatur sint voluptate voluptate irure anim proident enim enim. Ea dolor quis do quis tempor nulla dolore. Enim laborum sit sint Lorem eu consequat ullamco. Aute labore do incididunt laboris. Irure ex ea fugiat culpa anim dolore anim consequat fugiat. Nisi duis ad nulla ex incididunt labore id cillum officia laboris exercitation.Sit ullamco id sint mollit elit magna cillum qui elit. Proident commodo irure labore enim eiusmod nisi laboris veniam in esse in eu ut. Consectetur nisi labore esse minim laboris nulla culpa veniam laborum.',
-    img4: './images/Icon-export-button.svg',
-    img5: './images/github.svg',
-    img6: './images/Portfolio-2.svg',
-    img7: './images/portfolio-3.svg',
-    img8: './images/projrctDetails-snap.svg',
-    img9: './images/Tags-triple.svg',
-    github: 'https://github.com/Shubh-Dev',
-    gitLink: 'https://github.com/Shubh-Dev',
+    img: './images/portfolioImg1.svg',
+    company: 'CANOPY',
+    dot: './images/dot.svg',
+    position: 'Front-End-Dev',
+    date: '2022',
+    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
   },
   {
     id: 2,
     name: 'multi-post stories',
-    img1: './images/SnapshootPortfolio.svg',
-    details: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    img2: './images.Tags.svg',
-    github: 'https://github.com/Shubh-Dev',
+    img: './images/Portfolio2.svg',
+    company: 'CANOPY',
+    dot: './images/dot.svg',
+    position: 'Front-End-Dev',
+    date: '2022',
+    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
   },
   {
     id: 3,
     name: 'Tonic',
     img: './images/portfolio-3.svg',
-    img1: './images/SnapshootPortfolio.svg',
-    details: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    img2: './images.Tags.svg',
-    github: 'https://github.com/Shubh-Dev',
+    company: 'CANOPY',
+    dot: './images/dot.svg',
+    position: 'Front-End-Dev',
+    date: '2022',
+    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
   },
   {
     id: 4,
     name: 'Multi-post stories',
     img: './images/portfolio-4.svg',
-    img1: './images/SnapshootPortfolio.svg',
-    details: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    img2: './images/Tags.svg',
-    github: 'https://github.com/Shubh-Dev',
+    company: 'CANOPY',
+    dot: './images/dot.svg',
+    position: 'Front-End-Dev',
+    date: '2022',
+    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
   },
 ];
 
 projects.map((item) => {
   const project = document.createElement('div');
-  // project.classList.add('project');
+  project.classList.add('project');
   project.innerHTML = `
+  <div class="card">
   <div class="project-img">
     <img src="${item.img}" alt="">
   </div>
   <div class="project-details">
     <h3 class="main-name">${item.name}</h3>
-    <p>${item.details}</p>
-    <div class="project-details-btn">
-      <a href="${item.github}" target="_blank">
-        <img src="${item.img5}" alt="">
-      </a>
-      <a href="${item.gitLink}" target="_blank">
-        <img src="${item.img6}" alt="">
-      </a>
+    <div class="credentials">
+    <p>${item.company}</p>
+    <img src="${item.dot}" alt="dot">
+    <p>${item.position}</p>
+    <img src="${item.dot}" alt="dot">
+    <p>${item.date}</p>
+  </div>
+    <p>${item.description}</p>
+    <div class="technology">
+      <h5 class="blue-padding">${item.tech1}</h5>
+      <h5 class="blue-padding">${item.tech2}</h5>
+      <h5 class="blue-padding">${item.tech3}</h5>
     </div>
+    <button class="btn">View Project</button>
+  </div>
   </div>
   `;
-  document.querySelector('.project-section').appendChild(project);
-})
-
-
+  return document.querySelector('.project-section').appendChild(project);
+});
 
 // const popMenu = document.querySelector('.hamburger');
 // popMenu.addEventListener('click', () => {

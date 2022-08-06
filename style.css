@@ -185,14 +185,7 @@ button:hover {
   flex-wrap: nowrap;
 }
 
-.main-image img {
-  width: 100%;
-}
-
-.main-image {
-  margin-bottom: 20px;
-}
-
+/* 
 .button-2 {
   margin-top: 25px;
 }
