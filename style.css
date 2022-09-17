@@ -1,5 +1,5 @@
 body {
-  font: 16px/1.5 Arial, Helvetica, sans-serif;
+  font: 16px/1.5 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -185,7 +185,13 @@ button:hover {
   flex-wrap: nowrap;
 }
 
-/* 
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 7px;
+}
+
 .button-2 {
   margin-top: 25px;
 }
@@ -229,7 +235,7 @@ button:hover {
   margin: auto;
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .form {
@@ -281,6 +287,7 @@ input[type=submit]:hover {
   color: #fff;
 }
 
+/* 
 .container-modal {
   display: none;
 }

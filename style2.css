@@ -1,4 +1,5 @@
 .card {
+    gap: 10px;
     margin: 0 15px 5rem 15px;
     border: 1px solid #dfe1e6;
     padding: 10px;
