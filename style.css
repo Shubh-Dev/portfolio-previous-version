@@ -61,10 +61,10 @@ body {
   padding-top: 20px;
 }
 
-.main-nav.active .link-1 {
+/* .main-nav.active .link-1 {
   font-size: 35px;
   color: #fff;
-}
+} */
 
 .my-logo.active {
   display: none;
@@ -285,6 +285,13 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #79f798;
   color: #fff;
+}
+
+.project-modal-section {
+  background-color: #6070ff;
+  width: 90%;
+  height: 90%;
+  display: none;
 }
 
 /* 

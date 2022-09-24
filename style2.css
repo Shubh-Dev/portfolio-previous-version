@@ -24,3 +24,30 @@
     border-radius: 7px;
     font-size: 12px;
 }
+
+.hidden {
+    display: none;
+}
+
+.mobile-ham-menu-pop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #6070ffe3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .hidden-nav {
+    margin-left: 20px;
+    margin-top: 10vh;
+} */
+
+/* .link-1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+} */
+

@@ -76,7 +76,7 @@ projects.map((item) => {
       <h5 class="blue-padding">${item.tech2}</h5>
       <h5 class="blue-padding">${item.tech3}</h5>
     </div>
-    <button class="btn">View Project</button>
+    <button class="btn" id=${item.id} >View Project</button>
   </div>
   </div>
   `;
@@ -84,36 +84,66 @@ projects.map((item) => {
 });
 
 
+
+
 const popMenu = document.querySelector('.hamburger');
 popMenu.addEventListener('click', () => {
-  const myHeader = document.querySelector('.main-header');
-  myHeader.classList.add('active');
-  const myNavbar = document.querySelector('.main-nav');
-  myNavbar.classList.add('active');
-  const myLogo = document.querySelector('.my-logo');
-  myLogo.classList.add('active');
-  const lineBar = document.querySelector('.hamburger');
-  lineBar.classList.add('active');
-  const imgCross = document.querySelector('.cross-img');
-  imgCross.classList.add('active');
+  document.querySelector('.mobile-ham-menu-pop').classList.remove('hidden');
+  // const myHeader = document.querySelector('.main-header');
+  // myHeader.classList.add('active');
+  // const myNavbar = document.querySelector('.main-nav');
+  // myNavbar.classList.add('active');
+  // const myLogo = document.querySelector('.my-logo');
+  // myLogo.classList.add('active');
+  // const lineBar = document.querySelector('.hamburger');
+  // lineBar.classList.add('active');
+  // const imgCross = document.querySelector('.cross-img');
+  // imgCross.classList.add('active');
 });
 
 const popOutMenu = document.querySelector('.cross-img');
 popOutMenu.addEventListener('click', () => {
-  const myHeader = document.querySelector('.main-header');
-  myHeader.classList.remove('active');
-  const myNavbar = document.querySelector('.main-nav');
-  myNavbar.classList.remove('active');
-  const myLogo = document.querySelector('.my-logo');
-  myLogo.classList.remove('active');
-  const lineBar = document.querySelector('.hamburger');
-  lineBar.classList.remove('active');
-  const imgCross = document.querySelector('.cross-img');
-  imgCross.classList.remove('active');
+  document.querySelector('.mobile-ham-menu-pop').classList.add('hidden');
+  // const myHeader = document.querySelector('.main-header');
+  // myHeader.classList.remove('active');
+  // const myNavbar = document.querySelector('.main-nav');
+  // myNavbar.classList.remove('active');
+  // const myLogo = document.querySelector('.my-logo');
+  // myLogo.classList.remove('active');
+  // const lineBar = document.querySelector('.hamburger');
+  // lineBar.classList.remove('active');
+  // const imgCross = document.querySelector('.cross-img');
+  // imgCross.classList.remove('active');
 });
+
+
+const modalDisplayBtn =  document.querySelectorAll('.btn')
+modalDisplayBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    
+    const projectModal = document.querySelector('.project-modal-section')
+    projectModal.style.display = 'block'
+    console.log('clicked')
+    const p = document.createElement('p')
+    p.textContent = 'hello'
+    projectModal.appendChild(p)
+   
+
+  });
+});
+
+
+
+    
+
+  // const popUpMobileProject = document.createElement('div');
+  // popUpMobileProject.classList.add('pop-up-mobile');
+  // popUpMobileProject.innerHTML = `"Testing"`;
+  // return document.querySelector('.project-section').appendChild(popUpMobileProject);
 
 // const popOutMenu = document.querySelector('.cross-img')
 // popOutMenu.addEventListener('click', () => {
+
 
 // }
 
