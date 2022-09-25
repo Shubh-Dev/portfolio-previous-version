@@ -33,21 +33,36 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #6070ffe3;
+    background-color: #6070fff1;
     width: 100vw;
     height: 100vh;
-    display: flex;
     justify-content: space-between;
 }
 
-/* .hidden-nav {
-    margin-left: 20px;
-    margin-top: 10vh;
-} */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
 
-/* .link-1 {
-    color: #fff;
-    font-size: 30px;
+}
+
+.hidden-nav-list {
+    margin-left: 20px;
+    margin-top: 15vh;
+}
+
+.link-modal {
+    font-size: 35px;
     font-weight: 600;
-} */
+    padding-top: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cross-image {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+
 

@@ -84,11 +84,11 @@ projects.map((item) => {
 });
 
 
-
-
 const popMenu = document.querySelector('.hamburger');
+const mobileHamMenuPop = document.querySelector('.mobile-ham-menu-pop');
 popMenu.addEventListener('click', () => {
-  document.querySelector('.mobile-ham-menu-pop').classList.remove('hidden');
+  mobileHamMenuPop.classList.remove('hidden');
+  popMenu.style.display = 'none';
   // const myHeader = document.querySelector('.main-header');
   // myHeader.classList.add('active');
   // const myNavbar = document.querySelector('.main-nav');
@@ -101,9 +101,11 @@ popMenu.addEventListener('click', () => {
   // imgCross.classList.add('active');
 });
 
-const popOutMenu = document.querySelector('.cross-img');
-popOutMenu.addEventListener('click', () => {
-  document.querySelector('.mobile-ham-menu-pop').classList.add('hidden');
+const closeMenu = document.querySelector('.cross-img');
+closeMenu.addEventListener('click', () => {
+  mobileHamMenuPop.classList.add('hidden');
+  popMenu.style.display = 'block';
+
   // const myHeader = document.querySelector('.main-header');
   // myHeader.classList.remove('active');
   // const myNavbar = document.querySelector('.main-nav');
@@ -114,23 +116,17 @@ popOutMenu.addEventListener('click', () => {
   // lineBar.classList.remove('active');
   // const imgCross = document.querySelector('.cross-img');
   // imgCross.classList.remove('active');
+
 });
 
+const viewProjectBtn = document.querySelectorAll('.btn');
 
-const modalDisplayBtn =  document.querySelectorAll('.btn')
-modalDisplayBtn.forEach((btn) => {
+viewProjectBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
-    
-    const projectModal = document.querySelector('.project-modal-section')
-    projectModal.style.display = 'block'
-    console.log('clicked')
-    const p = document.createElement('p')
-    p.textContent = 'hello'
-    projectModal.appendChild(p)
-   
-
-  });
+    console.log(btn.id)
+})  
 });
+
 
 
 
@@ -350,3 +346,40 @@ modalDisplayBtn.forEach((btn) => {
 //     emailError.textContent = 'Email should be in lowercase';
 //   }
 // });
+
+// const modal = document.createElement('div');
+//       modal.classList.add('modal');
+//       modal.innerHTML = `
+//       <div class="modal-content">
+//       <div class="modal-header">
+//         <h3 class="modal-title">${projects[0].name}</h3>
+//         <button class="close-btn">X</button>
+//       </div>
+//       <div class="modal-body">
+//         <div class="modal-img">
+//           <img src="${projects[0].img}" alt="">
+//         </div>
+//         <div class="modal-details">
+//           <div class="modal-credentials">
+//             <p>${projects[0].company}</p>
+//             <img src="${projects[0].dot}" alt="dot">
+//             <p>${projects[0].position}</p>
+//             <img src="${projects[0].dot}" alt="dot">
+//             <p>${projects[0].date}</p>
+//           </div>
+//           <p>${projects[0].description}</p>
+//           <div class="modal-technology">
+//             <h5 class="blue-padding">${projects[0].tech1}</h5>
+//             <h5 class="blue-padding">${projects[0].tech2}</h5>
+//             <h5 class="blue-padding">${projects[0].tech3}</h5>
+//           </div>
+//           <div class="modal-btns">
+//             <button class="modal-btn">See Live</button>
+//             <button class="modal-btn">See Source</button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//       `;
+//       return document.querySelector('.modal-section').appendChild(modal);
+//     }

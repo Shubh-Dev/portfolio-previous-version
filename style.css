@@ -14,6 +14,7 @@ body {
 }
 
 .hamburger {
+  cursor: pointer;
   position: absolute;
   top: 40px;
   right: 20px;
@@ -162,12 +163,6 @@ button {
   border-radius: 5px;
   font-size: 90%;
   margin-top: 10px;
-}
-
-button:hover {
-  background-color: rgb(166, 113, 252);
-  font-weight: bolder;
-  color: #fff;
 }
 
 .showcase-2 {
