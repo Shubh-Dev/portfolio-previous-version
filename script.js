@@ -1,55 +1,55 @@
 const projects = [
   {
     id: 1,
-    name: 'Tonic',
-    img: './images/portfolioImg1.svg',
-    company: 'CANOPY',
+    name: 'Corona Info Tracker',
+    img: './images/corona-app.png',
+    company: 'Personal',
     dot: './images/dot.svg',
     position: 'Front-End-Dev',
     date: '2022',
-    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
+    description: 'This app  allows users to get get information of Covid-19 disease from all over the world. built with React, Redux, and JavaScript.',
+    tech1: 'React',
+    tech2: 'Redux',
+    tech3: 'API',
   },
   {
     id: 2,
-    name: 'multi-post stories',
-    img: './images/Portfolio2.svg',
-    company: 'CANOPY',
+    name: 'Math-Magicians',
+    img: './images/math-magician.png',
+    company: 'Personal',
     dot: './images/dot.svg',
     position: 'Front-End-Dev',
     date: '2022',
-    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
+    description: 'The website allows math lovers to play with numbers. Built with React, JavaScript, and CSS.',
+    tech1: 'React',
+    tech2: 'JavaScript',
+    tech3: 'CSS',
   },
   {
     id: 3,
-    name: 'Tonic',
-    img: './images/portfolio-3.svg',
-    company: 'CANOPY',
+    name: 'Leaderboard',
+    img: './images/leaderboard.png',
+    company: 'Personal',
     dot: './images/dot.svg',
     position: 'Front-End-Dev',
     date: '2022',
-    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
+    description: 'Leaderboard is a tool that helps to keep records of game scores. It simply lists the names and corresponding scores. Built with JavaScript, webpack, CSS.',
+    tech1: 'JavaScript',
+    tech2: 'Webpack',
+    tech3: 'CSS',
   },
   {
     id: 4,
-    name: 'Multi-post stories',
-    img: './images/portfolio-4.svg',
-    company: 'CANOPY',
+    name: 'Space Travelers Hub',
+    img: './images/space-traveller.png',
+    company: 'Personal',
     dot: './images/dot.svg',
     position: 'Front-End-Dev',
     date: '2022',
-    description: 'Laboris tempor commodo excepteur voluptate dolore sunt.Et in mollit non aliqua elit dolor est laboris mollit cupidatat exercitation.Consequat id amet consequat excepteur velit sit cupidatat proident ad dolor pariatur tempor dolor.Labore esse tempor nostrud culpa Lorem ipsum commodo in do dolore.Cupidatat nulla quis consectetur velit duis ex anim tempor consequat ex.',
-    tech1: 'HTML',
-    tech2: 'CSS',
-    tech3: 'JavaScript',
+    description: 'This is react app that allows users to book missions and reserve rockets. Built with React, Redux, API, and CSS.',
+    tech1: 'React',
+    tech2: 'Redux',
+    tech3: 'API',
   },
 ];
 
@@ -59,7 +59,7 @@ projects.map((item) => {
   project.innerHTML = `
   <div class="card">
   <div class="project-img">
-    <img src="${item.img}" alt="">
+    <img class="corona-img" src="${item.img}" alt="">
   </div>
   <div class="project-details">
     <h3 class="main-name">${item.name}</h3>
@@ -121,11 +121,7 @@ closeMenu.addEventListener('click', () => {
 
 const viewProjectBtn = document.querySelectorAll('.btn');
 
-viewProjectBtn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    console.log(btn.id)
-})  
-});
+
 
 
 
