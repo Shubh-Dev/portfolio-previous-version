@@ -53,6 +53,14 @@ const projects = [
   },
 ];
 
+const handleClick = (e) => {
+  const btn = document.querySelectorAll('.btn');
+  btn.forEach((item) => {
+    console.log(item.id)
+  });
+ 
+};
+
 projects.map((item) => {
   const project = document.createElement('div');
   project.classList.add('project');
@@ -61,6 +69,7 @@ projects.map((item) => {
   <div class="project-img">
     <img class="corona-img" src="${item.img}" alt="">
   </div>
+  <div class="project-info">
   <div class="project-details">
     <h3 class="main-name">${item.name}</h3>
     <div class="credentials">
@@ -76,7 +85,8 @@ projects.map((item) => {
       <h5 class="blue-padding">${item.tech2}</h5>
       <h5 class="blue-padding">${item.tech3}</h5>
     </div>
-    <button class="btn" id=${item.id} >View Project</button>
+    <button class="btn" onclick="handleClick()" id=${item.id} >View Project</button>
+  </div>
   </div>
   </div>
   `;

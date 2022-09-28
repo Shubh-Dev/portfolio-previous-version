@@ -344,9 +344,19 @@ input[type=submit]:hover {
 */
 
 @media (min-width: 922px) {
+
+  .card {
+    display: flex;
+    width: 70%;
+  }
+
   .main-nav {
     visibility: visible;
     float: right;
+  }
+
+  .project {
+    margin: auto;
   }
 
   .container-modal.active {
