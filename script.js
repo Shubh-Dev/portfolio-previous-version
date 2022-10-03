@@ -11,6 +11,7 @@ const projects = [
     tech1: 'React',
     tech2: 'Redux',
     tech3: 'API',
+    modal: false
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const projects = [
     tech1: 'React',
     tech2: 'JavaScript',
     tech3: 'CSS',
+    modal: false
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const projects = [
     tech1: 'JavaScript',
     tech2: 'Webpack',
     tech3: 'CSS',
+    modal: false
   },
   {
     id: 4,
@@ -50,16 +53,9 @@ const projects = [
     tech1: 'React',
     tech2: 'Redux',
     tech3: 'API',
+    modal: false
   },
 ];
-
-const handleClick = (e) => {
-  const btn = document.querySelectorAll('.btn');
-  btn.forEach((item) => {
-    console.log(item.id)
-  });
- 
-};
 
 projects.map((item) => {
   const project = document.createElement('div');
@@ -91,6 +87,7 @@ projects.map((item) => {
   </div>
   `;
   return document.querySelector('.project-section').appendChild(project);
+
 });
 
 

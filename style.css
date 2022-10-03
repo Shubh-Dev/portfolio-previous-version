@@ -9,8 +9,79 @@ body {
   padding: 0;
 }
 
-.main-header {
+/* .main-header {
   position: relative;
+} */
+
+.card {
+  gap: 10px;
+  margin: 0 15px 5rem 15px;
+  border: 1px solid #dfe1e6;
+  padding: 10px;
+  border-radius: 7px;
+  background: #fbfbfc;
+}
+
+.credentials {
+  display: flex;
+  gap: 10px;
+}
+
+.technology {
+  display: flex;
+  gap: 10px;
+  color: #6070ff;
+}
+
+.blue-padding {
+  padding: 5px;
+  background-color: #ebebff;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-ham-menu-pop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #6070fff1;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.hidden-nav-list {
+  margin-left: 20px;
+  margin-top: 15vh;
+}
+
+.link-modal {
+  font-size: 35px;
+  font-weight: 600;
+  padding-top: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cross-image {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+
+.corona-img {
+  width: 100%;
+  height: auto;
 }
 
 .hamburger {
@@ -60,6 +131,10 @@ body {
   color: white;
   padding-left: 20px;
   padding-top: 20px;
+}
+
+.project-section {
+  display: grid;
 }
 
 /* .main-nav.active .link-1 {
@@ -346,17 +421,23 @@ input[type=submit]:hover {
 @media (min-width: 922px) {
 
   .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     width: 70%;
+    margin: auto;
+
+  }
+
+  .project {
+    display: grid;
+    margin-bottom: 50px;
+    border: 1px red dashed;
   }
 
   .main-nav {
     visibility: visible;
     float: right;
-  }
-
-  .project {
-    margin: auto;
   }
 
   .container-modal.active {
@@ -374,6 +455,17 @@ input[type=submit]:hover {
 
   nav ul li a:hover {
     color: #6070ff;
+  }
+
+
+  .corona-img {
+    border: 1px dashed red;
+    height: 500px;
+
+  }
+
+  .main-name {
+    font-size:  33px;
   }
 
   .hamburger {
