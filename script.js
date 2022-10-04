@@ -1,61 +1,4 @@
-const projects = [
-  {
-    id: 1,
-    name: 'Corona Info Tracker',
-    img: './images/corona-app.png',
-    company: 'Personal',
-    dot: './images/dot.svg',
-    position: 'Front-End-Dev',
-    date: '2022',
-    description: 'This app  allows users to get get information of Covid-19 disease from all over the world. built with React, Redux, and JavaScript.',
-    tech1: 'React',
-    tech2: 'Redux',
-    tech3: 'API',
-    modal: false
-  },
-  {
-    id: 2,
-    name: 'Math-Magicians',
-    img: './images/math-magician.png',
-    company: 'Personal',
-    dot: './images/dot.svg',
-    position: 'Front-End-Dev',
-    date: '2022',
-    description: 'The website allows math lovers to play with numbers. Built with React, JavaScript, and CSS.',
-    tech1: 'React',
-    tech2: 'JavaScript',
-    tech3: 'CSS',
-    modal: false
-  },
-  {
-    id: 3,
-    name: 'Leaderboard',
-    img: './images/leaderboard.png',
-    company: 'Personal',
-    dot: './images/dot.svg',
-    position: 'Front-End-Dev',
-    date: '2022',
-    description: 'Leaderboard is a tool that helps to keep records of game scores. It simply lists the names and corresponding scores. Built with JavaScript, webpack, CSS.',
-    tech1: 'JavaScript',
-    tech2: 'Webpack',
-    tech3: 'CSS',
-    modal: false
-  },
-  {
-    id: 4,
-    name: 'Space Travelers Hub',
-    img: './images/space-traveller.png',
-    company: 'Personal',
-    dot: './images/dot.svg',
-    position: 'Front-End-Dev',
-    date: '2022',
-    description: 'This is react app that allows users to book missions and reserve rockets. Built with React, Redux, API, and CSS.',
-    tech1: 'React',
-    tech2: 'Redux',
-    tech3: 'API',
-    modal: false
-  },
-];
+import projects from './modules/projects.js';
 
 projects.map((item) => {
   const project = document.createElement('div');
@@ -81,7 +24,7 @@ projects.map((item) => {
       <h5 class="blue-padding">${item.tech2}</h5>
       <h5 class="blue-padding">${item.tech3}</h5>
     </div>
-    <button class="btn" onclick="handleClick()" id=${item.id} >View Project</button>
+    <button class="btn">View Project</button>
   </div>
   </div>
   </div>
@@ -126,8 +69,76 @@ closeMenu.addEventListener('click', () => {
 
 });
 
+const modal = document.createElement('div');
+modal.classList.add('modal');
 const viewProjectBtn = document.querySelectorAll('.btn');
+viewProjectBtn.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    modal.innerHTML = `
+    <div class="modal-content">
+    <div class="modal-header">
+    <div class="modal-header-top">
+      <h2 class="modal-title">${projects[i].name}</h2>
+      <img class="close-btn" src="./images/Enabled-2.svg" alt="close-btn">
+    </div>
+    <div class="modal-header-bottom">
+    ${projects[i].company} ${projects[i].dot} ${projects[i].position} ${projects[i].dot} ${projects[i].date}
+    </div>
+    </div>
+    <div class="modal-body">
+      <div class="main-image-holder">
+        <img class="main-image" src="${projects[i].img}" alt="">
+      </div>
+      <div class="modal-text">
+        <p>${projects[i].description}</p>
+        </div>
+        <div class="modal-technologies">
+          <h5 class="blue-padding">${projects[i].tech1}</h5>
+          <h5 class="blue-padding">${projects[i].tech2}</h5>
+          <h5 class="blue-padding">${projects[i].tech3}</h5>
+        </div>
 
+        <div class="modal-btns">
+          <a href="${projects[i].liveLink}" class="modal-btn" target="_blank">See Live</a>
+          <a href="${projects[i].sourceLink}" class="modal-btn" target="_blank">See Source</a>
+          </div>
+    </div>
+    </div>
+    `;
+    return document.body.appendChild(modal);
+    
+  });
+});
+
+const closeBtn = [...document.querySelectorAll('.close-btn')];
+closeBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    console.log('clicked');
+  });
+});
+
+
+
+// const modal = document.querySelector('.modal');
+//     modal.classList.remove('hidden');
+//     const modalImg = document.querySelector('.modal-img');
+//     modalImg.src = projects[i].img;
+//     const modalName = document.querySelector('.modal-name');
+//     modalName.innerHTML = projects[i].name;
+//     const modalCompany = document.querySelector('.modal-company');
+//     modalCompany.innerHTML = projects[i].company;
+//     const modalPosition = document.querySelector('.modal-position');
+//     modalPosition.innerHTML = projects[i].position;
+//     const modalDate = document.querySelector('.modal-date');
+//     modalDate.innerHTML = projects[i].date;
+//     const modalDescription = document.querySelector('.modal-description');
+//     modalDescription.innerHTML = projects[i].description;
+//     const modalTech1 = document.querySelector('.modal-tech1');
+//     modalTech1.innerHTML = projects[i].tech1;
+//     const modalTech2 = document.querySelector('.modal-tech2');
+//     modalTech2.innerHTML = projects[i].tech2;
+//     const modalTech3 = document.querySelector('.modal-tech3');
+//     modalTech3.innerHTML = projects[i].tech3;
 
 
 
