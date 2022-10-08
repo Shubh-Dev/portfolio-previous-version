@@ -1,4 +1,38 @@
+.modal-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 95vw;
+    height: 90vh;
+    background: #fff;
+    overflow: scroll;
 
+}
+
+.modal-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.modal-header-top .close-btn {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+.modal-header-bottom {
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.main-image {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
 
 
 
