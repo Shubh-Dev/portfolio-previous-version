@@ -6,6 +6,10 @@
     height: 90vh;
     background: #fff;
     overflow: scroll;
+    margin-top: 40px;
+    margin-right: 8px;
+    background-color: aquamarine;
+    border-radius: 10px;
 
 }
 
@@ -31,9 +35,48 @@
 .main-image {
     width: 95%;
     height: auto;
-    margin: 0 auto;
+    margin: 30px auto auto 10px;
+    border-radius: 10px;
+
 }
 
+.modal-text {
+    margin: 15px auto auto 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+}
+
+.modal-technologies {
+   display: flex;
+   gap: 10px;
+    margin: 20px auto auto 10px;
+}
+
+.blue-padding {
+    padding: 3px 10px;
+    background-color: #ebebff;
+    border-radius: 7px;
+    font-size: 12px;
+  }
+
+  .modal-btns {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 30px 10px;
+   
+  }
+  
+    .modal-btn {
+        width: 150px;
+        height: 40px;
+        border: 1px solid #6070ff;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
 
 
 

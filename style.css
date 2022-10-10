@@ -33,13 +33,6 @@ body {
   color: #6070ff;
 }
 
-.blue-padding {
-  padding: 5px;
-  background-color: #ebebff;
-  border-radius: 7px;
-  font-size: 12px;
-}
-
 .hidden {
   display: none;
 }
