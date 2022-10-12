@@ -81,10 +81,11 @@ viewProjectBtn.forEach((btn, i) => {
           <h5 class="blue-padding">${projects[i].tech2}</h5>
           <h5 class="blue-padding">${projects[i].tech3}</h5>
         </div>
+        <div class="thin-line"></div>
 
         <div class="modal-btns">
-          <a href="${projects[i].liveLink}" class="modal-btn" target="_blank">See Live</a>
-          <a href="${projects[i].sourceLink}" class="modal-btn" target="_blank">See Source</a>
+          <a href="${projects[i].liveLink}" class="modal-btn" target="_blank">See Live <img class="btn-icon-modal" src="${projects[i].seeLive}"></a>
+          <a href="${projects[i].sourceLink}" class="modal-btn" target="_blank">See Source <img class="btn-icon-modal" src="${projects[i].seeSource}"></a>
           </div>
     </div>
     </div>

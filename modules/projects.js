@@ -13,7 +13,9 @@ const projects = [
     tech3: 'API',
     modalclose: './images/Enabled-3.svg',
     liveLink: 'https://cheery-concha-41a565.netlify.app',
-    sourceLink: 'https://github.com/Shubh-Dev/corona-info-tracker'
+    sourceLink: 'https://github.com/Shubh-Dev/corona-info-tracker',
+    seeLive: './images/Icon-export-button.svg',
+    seeSource: './images/github.svg',
   },
   {
     id: 2,
@@ -29,7 +31,9 @@ const projects = [
     tech3: 'CSS',
     modalclose: './images/Enabled-3.svg',
     liveLink: 'https://fast-anchorage-14363.herokuapp.com/calculator',
-    sourceLink: 'https://github.com/Shubh-Dev/math-magician-react'
+    sourceLink: 'https://github.com/Shubh-Dev/math-magician-react',
+    seeLive: './images/Icon-export-button.svg',
+    seeSource: './images/github.svg',
   },
   {
     id: 3,
@@ -45,7 +49,9 @@ const projects = [
     tech3: 'CSS',
     modalclose: './images/Enabled-3.svg',
     liveLink: 'https://cheery-caramel-b70a4d.netlify.app/',
-    sourceLink: 'https://github.com/Shubh-Dev/LeaderBoard'
+    sourceLink: 'https://github.com/Shubh-Dev/LeaderBoard',
+    seeLive: './images/Icon-export-button.svg',
+    seeSource: './images/github.svg',
   },
   {
     id: 4,
@@ -61,7 +67,9 @@ const projects = [
     tech3: 'API',
     modalclose: './images/Enabled-3.svg',
     liveLink: 'https://travelers-hub-rich-shubh.netlify.app/',
-    sourceLink: 'https://github.com/assadounto/space-x'
+    sourceLink: 'https://github.com/assadounto/space-x',
+    seeLive: './images/Icon-export-button.svg',
+    seeSource: './images/github.svg',
   },
 ];
 

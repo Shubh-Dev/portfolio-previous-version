@@ -1,82 +1,90 @@
 .modal-content {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 95vw;
-    height: 90vh;
-    background: #fff;
-    overflow: scroll;
-    margin-top: 40px;
-    margin-right: 8px;
-    background-color: aquamarine;
-    border-radius: 10px;
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 95vw;
+  height: 90vh;
+  background: #fff;
+  overflow: scroll;
+  margin-top: 40px;
+  margin-right: 8px;
+  border-radius: 10px;
 }
 
 .modal-header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.modal-title {
+  font-size: 26px;
 }
 
 .modal-header-top .close-btn {
-    width: 50px;
-    height: auto;
-    cursor: pointer;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
 }
 
 .modal-header-bottom {
-    display: flex;
-    gap: 10px;
-    padding-left: 15px;
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
 }
 
 .main-image {
-    width: 95%;
-    height: auto;
-    margin: 30px auto auto 10px;
-    border-radius: 10px;
-
+  width: 95%;
+  height: 40vh;
+  margin: 21px auto auto 10px;
+  border-radius: 10px;
 }
 
 .modal-text {
-    margin: 15px auto auto 10px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000;
-    text-align: justify;
+  margin: 15px 12px auto 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-align: justify;
 }
 
 .modal-technologies {
-   display: flex;
-   gap: 10px;
-    margin: 20px auto auto 10px;
+  display: flex;
+  gap: 10px;
+  margin: 20px auto auto 10px;
 }
 
 .blue-padding {
-    padding: 3px 10px;
-    background-color: #ebebff;
-    border-radius: 7px;
-    font-size: 12px;
-  }
+  padding: 3px 10px;
+  background-color: #ebebff;
+  border-radius: 7px;
+  font-size: 12px;
+}
 
-  .modal-btns {
-    display: flex;
-    justify-content: space-around;
-    margin: 40px auto 30px 10px;
-   
-  }
-  
-    .modal-btn {
-        width: 150px;
-        height: 40px;
-        border: 1px solid #6070ff;
-        border-radius: 7px;
-        font-size: 15px;
-        font-weight: 600;
-        cursor: pointer;
-    }
+.modal-btns {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 30px 10px;
+}
 
+.modal-btn {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #6070ff;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #6070ff;
+}
 
-
+.thin-line {
+  width: 95%;
+  height: 1px;
+  background-color: #ebecf0;
+  margin: 20px auto 0 auto;
+}
