@@ -50,7 +50,6 @@ body {
 .d-flex {
   display: flex;
   justify-content: space-between;
-
 }
 
 .hidden-nav-list {
@@ -357,7 +356,7 @@ input[type=submit]:hover {
   display: none;
 }
 
-/* 
+/*
 .container-modal {
   display: none;
 }
@@ -410,4 +409,3 @@ input[type=submit]:hover {
 }
 
 */
-

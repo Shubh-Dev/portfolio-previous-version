@@ -45,13 +45,7 @@ closeMenu.addEventListener('click', () => {
   popMenu.style.display = 'block';
 });
 
-const redirectToHome = () => {
-  window.location.href = 'index.html';
-};
-
-
 // popup modal
-
 
 const modal = document.createElement('div');
 modal.classList.add('modal');
