@@ -6,7 +6,7 @@ projects.map((item) => {
   project.innerHTML = `
   <div class="card">
   <div class="project-img">
-    <img class="corona-img" src="${item.img}" alt="">
+    <img class="corona-img" src="${item.img}" alt="project">
   </div>
   <div class="project-info">
   <div class="project-details">
@@ -18,7 +18,7 @@ projects.map((item) => {
     <img src="${item.dot}" alt="dot">
     <p>${item.date}</p>
   </div>
-    <p>${item.description}</p>
+    <p class="description-desktop-version">${item.description}</p>
     <div class="technology">
       <h5 class="blue-padding">${item.tech1}</h5>
       <h5 class="blue-padding">${item.tech2}</h5>
@@ -73,9 +73,13 @@ viewProjectBtn.forEach((btn, i) => {
       <div class="main-image-holder">
         <img class="main-image" src="${projects[i].img}" alt="">
       </div>
+      <div class="desktop-modal-details">
+      <div>
       <div class="modal-text">
         <p>${projects[i].description}</p>
         </div>
+        </div>
+        <div>
         <div class="modal-technologies">
           <h5 class="blue-padding">${projects[i].tech1}</h5>
           <h5 class="blue-padding">${projects[i].tech2}</h5>
@@ -86,6 +90,8 @@ viewProjectBtn.forEach((btn, i) => {
         <div class="modal-btns">
           <a href="${projects[i].liveLink}" class="modal-btn" target="_blank">See Live <img class="btn-icon-modal" src="${projects[i].seeLive}"></a>
           <a href="${projects[i].sourceLink}" class="modal-btn" target="_blank">See Source <img class="btn-icon-modal" src="${projects[i].seeSource}"></a>
+          </div>
+          </div> 
           </div>
     </div>
     </div>

@@ -1,0 +1,16 @@
+@media (min-width: 922px) {
+    .modal-content {
+        border: 1px dashed red;
+        width: 65vw;
+        height: 80vh;
+        margin: 10vh 40vh 0 0;
+    }
+
+    .desktop-modal-details {
+        display: flex;
+    }
+
+    .thin-line {
+        display: none;
+    }
+}
