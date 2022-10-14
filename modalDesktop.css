@@ -2,8 +2,9 @@
   .modal-content {
     border: 1px dashed red;
     width: 65vw;
-    height: 80vh;
-    margin: 10vh 40vh 0 0;
+    height: 90vh;
+    margin: 5vh 40vh 0 0;
+    padding: 20px 40px;
   }
 
   .desktop-modal-details {
@@ -12,5 +13,28 @@
 
   .thin-line {
     display: none;
+  }
+
+  .corona-img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .main-image-holder {
+    border: 1px dashed red;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .modal-header {
+    margin: 0 60px 0 60px;
+    border: 1px dashed blue;
+  }
+
+  .desktop-modal-details {
+    border: 1px dashed green;
+    margin: 0 60px 0 60px;
   }
 }
