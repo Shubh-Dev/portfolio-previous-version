@@ -48,6 +48,7 @@ closeMenu.addEventListener('click', () => {
 // popup modal
 
 const modal = document.createElement('div');
+const overlay = document.getElementsByClassName('overlay')[0];
 modal.classList.add('modal');
 const viewProjectBtn = document.querySelectorAll('.btn');
 viewProjectBtn.forEach((btn, i) => {
@@ -91,10 +92,14 @@ viewProjectBtn.forEach((btn, i) => {
     </div>
     `;
     document.body.appendChild(modal);
+    overlay.classList.remove('hidden');
 
     const closeModal = document.querySelector('.close-btn');
     closeModal.addEventListener('click', () => {
       modal.remove();
+      overlay.classList.add('hidden');
     }, { once: true });
   });
 });
+
+

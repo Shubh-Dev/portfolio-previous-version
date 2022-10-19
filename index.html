@@ -81,6 +81,7 @@
     </div> 
     </section>
     <div class="project-section"></div>
+    <div class="overlay hidden"></div>
   <div class="showcase-2" id="about_sec">
     <aside class="sidebar">
     <h2>About <br>Myself</h2>
@@ -128,9 +129,9 @@
       <div class="form">
         <form id="my-form" action="https://formspree.io/f/mknyrjvn" method="post">
         <ul>
-          <li><input type="text" maxlength="30" placeholder="Name" required></li>
+          <li><input class="name-input" type="text" maxlength="30" placeholder="Name" required></li>
           <li><input id="my-email" type="email" placeholder="Enter E-mail" required></li>
-          <li><textarea name="msg" placeholder="Write your message here" maxlength="500" required></textarea></li>
+          <li><textarea class="message-input" name="msg" placeholder="Write your message here" maxlength="500" required></textarea></li>
           <li><input id="submit-button" type="submit" value="Get It Touch"></li>
           <li><span id="error-mes"></span></li>
         </ul>
@@ -139,5 +140,6 @@
      </div>
     </footer> 
     <script src="script.js" type="module"></script> 
+    <script src="storage.js"></script>
 </body>
 </html>

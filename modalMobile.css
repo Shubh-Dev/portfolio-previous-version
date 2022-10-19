@@ -9,6 +9,7 @@
   margin-top: 40px;
   margin-right: 8px;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .modal-header-top {
