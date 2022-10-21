@@ -2,19 +2,21 @@
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
     width: 70%;
     margin: auto;
     border-radius: 20px;
   }
 
   .project {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+    border: 1px dashed red;
   }
 
   .project-info {
     padding: 30px;
+    border: 1px dashed rgb(23, 220, 62);
   }
 
   .description-desktop-version {
@@ -52,10 +54,10 @@
     color: #6070ff;
   }
 
-  .corona-img {
-    height: 500px;
-    object-fit: fill;
+  .project-img {
+    border: 1px dashed blue;
   }
+
 
   .main-name {
     font-size: 33px;

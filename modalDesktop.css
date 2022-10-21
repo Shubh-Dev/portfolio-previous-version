@@ -7,10 +7,6 @@
     padding: 20px 40px;
   }
 
-  .desktop-modal-details {
-    display: flex;
-  }
-
   .thin-line {
     display: none;
   }
@@ -34,6 +30,7 @@
   }
 
   .desktop-modal-details {
+    display: flex;
     border: 1px dashed green;
     margin: 0 60px 0 60px;
   }
