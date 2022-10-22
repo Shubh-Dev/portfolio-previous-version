@@ -1,37 +1,18 @@
 @media (min-width: 922px) {
-  .modal-content {
-    border: 1px dashed red;
-    width: 65vw;
-    height: 90vh;
-    margin: 5vh 40vh 0 0;
-    padding: 20px 40px;
-  }
+    .desktop-modal-details {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 
-  .thin-line {
-    display: none;
-  }
+    .modal-details-and-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start
+    }
 
-  .corona-img {
-    width: 70%;
-    height: 100%;
-  }
-
-  .main-image-holder {
-    border: 1px dashed red;
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    padding: 20px;
-  }
-
-  .modal-header {
-    margin: 0 60px 0 60px;
-    border: 1px dashed blue;
-  }
-
-  .desktop-modal-details {
-    display: flex;
-    border: 1px dashed green;
-    margin: 0 60px 0 60px;
-  }
-}
+    .modal-btns {
+        display: flex;
+        gap: 1rem;
+    }
+    
+};

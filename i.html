@@ -1,0 +1,34 @@
+<div class="modal-content">
+    <div class="modal-header">
+    <div class="modal-header-top">
+      <h2 class="modal-title">${projects[i].name}</h2>
+      <img class="close-btn" src="./images/Enabled-3.svg">
+    </div>
+    <div class="modal-header-bottom">
+    ${projects[i].company} <img src="${projects[i].dot}"> ${projects[i].position} <img src="${projects[i].dot}"> ${projects[i].date}
+    </div>
+    </div>
+    <div class="modal-body">
+      <div class="main-image-holder">
+        <img class="main-image" src="${projects[i].img}" alt="">
+      </div>
+      <div class="desktop-modal-details">
+      <div class="modal-text">
+        <p>${projects[i].description}</p>
+        </div>
+        <div>
+        <div class="modal-technologies">
+          <h5 class="blue-padding">${projects[i].tech1}</h5>
+          <h5 class="blue-padding">${projects[i].tech2}</h5>
+          <h5 class="blue-padding">${projects[i].tech3}</h5>
+        </div>
+        <div class="thin-line"></div>
+
+        <div class="modal-btns">
+          <a href="${projects[i].liveLink}" class="modal-btn" target="_blank">See Live <img class="btn-icon-modal" src="${projects[i].seeLive}"></a>
+          <a href="${projects[i].sourceLink}" class="modal-btn" target="_blank">See Source <img class="btn-icon-modal" src="${projects[i].seeSource}"></a>
+          </div>
+          </div> 
+          </div>
+    </div>
+    </div>

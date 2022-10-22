@@ -3,13 +3,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 70%;
+    height: 70vh;
     margin: auto;
     border-radius: 20px;
+    border: 2px solid #c32f2f;
   }
 
   .project {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 50px;
     border: 1px dashed red;
   }
@@ -55,7 +55,14 @@
   }
 
   .project-img {
-    border: 1px dashed blue;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .corona-img {
+    width: 100%;
+    height: 180px;
   }
 
 

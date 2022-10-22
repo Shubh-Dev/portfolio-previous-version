@@ -69,12 +69,10 @@ viewProjectBtn.forEach((btn, i) => {
         <img class="main-image" src="${projects[i].img}" alt="">
       </div>
       <div class="desktop-modal-details">
-      <div>
       <div class="modal-text">
         <p>${projects[i].description}</p>
         </div>
-        </div>
-        <div>
+        <div class="modal-details-and-btns">
         <div class="modal-technologies">
           <h5 class="blue-padding">${projects[i].tech1}</h5>
           <h5 class="blue-padding">${projects[i].tech2}</h5>
