@@ -1,5 +1,6 @@
 body {
   font: 16px/1.5 'Poppins', Arial, Helvetica, sans-serif;
+  overflow: scroll;
 }
 
 * {

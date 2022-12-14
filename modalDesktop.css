@@ -1,18 +1,17 @@
 @media (min-width: 922px) {
-    .desktop-modal-details {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+  .desktop-modal-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 
-    .modal-details-and-btns {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start
-    }
+  .modal-details-and-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-    .modal-btns {
-        display: flex;
-        gap: 1rem;
-    }
-    
-};
+  .modal-btns {
+    display: flex;
+    gap: 1rem;
+  }
+}

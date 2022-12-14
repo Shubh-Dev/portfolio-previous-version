@@ -99,5 +99,3 @@ viewProjectBtn.forEach((btn, i) => {
     }, { once: true });
   });
 });
-
-
